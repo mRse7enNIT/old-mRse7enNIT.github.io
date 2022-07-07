@@ -1,0 +1,220 @@
+---
+---
+
+@string{aps = {American Physical Society,}}
+
+@INPROCEEDINGS{fpgaaccelerator,
+  author={},
+  bibtex_show={false},
+  booktitle={2022 59th ACM/IEEE Design Automation Conference (DAC)},
+  title={Accelerating and Pruning CNNs for Semantic Segmentation on
+FPGA},
+  year={2022},
+  volume={},
+  number={},
+  pages={1-6},
+  abstract={Semantic segmentation is one of the popular tasks in computer
+vision, providing pixel-wise annotations for scene understand-
+ing. However, segmentation-based convolutional neural networks
+require tremendous computational power. In this work, a fully-
+pipelined hardware accelerator with support for dilated convo-
+lution is introduced, which cuts down the redundant zero mul-
+tiplications. Furthermore, we propose a genetic algorithm based
+automated channel pruning technique to jointly optimize computa-
+tional complexity and model accuracy. Finally, hardware heuristics
+and an accurate model of the custom accelerator design enable
+a hardware-aware pruning framework. We achieve 2.44× lower
+latency with minimal degradation in semantic prediction quality
+(−1.98 pp lower mean intersection over union) compared to the
+baseline DeepLabV3+ model, evaluated on an Arria-10 FPGA.},
+abbr={DAC},
+selected={true}
+}
+
+@INPROCEEDINGS{masterthesisSaptarshi,
+  author={Saptarshi Mitra},
+  bibtex_show={false},
+  booktitle={Master's Thesis, Chair of Integrated Systems, Tecnical University of Munich},
+  title={Accelerating Semantic Segmentation on FPGA},
+  year={2021},
+  volume={},
+  number={},
+  pages={1-97},
+  abstract={From healthcare to autonomous driving, Deep Neural Networks (DNN) dominate
+
+over the traditional Computer Vision (CV) approaches in terms of accuracy and effi-
+ciency. Exponential increase of DNN applications require tremendous computation
+
+power of the underlying hardware resources. Naturally, the superior performance of
+DNN models comes at a cost of huge memory footprint and complex calculations.
+
+Even if Graphics Processing Units (GPU) are the main work-horse during the train-
+ing of DNNs for their massive computational capabilities, they are not suitable for
+
+mobile deployments. Computations in remote cloud is also not suitable for unreli-
+able network latency and potential security issues. The hardware, accelerating the
+
+inference at the edge, should offer flexibility of deployment due to the rapid-changing
+nature of this research area. Field-programmable Gate Array (FPGA) provides the
+best trade-off between performance, power-consumption and design flexibility.
+Convolutional Neural Networks (CNN) are the state-of-the-art for computer vision
+applications. Semantic image segmentation is one of the most complex tasks in
+computer vision, providing pixel-wise annotations for complete scene understanding.
+For a critical application like autonomous driving, DeepLabV3+ model provides the
+state-of-the-art Mean Intersection-Over-Union (mIOU) for semantic segmentation
+on the CityScapes dataset. In this work, a fully pipelined hardware accelerator
+implementing novel dilated convolution was introduced. Using this accelerator, an
+end-end DeepLabV3+ deployment was possible on FPGA. This architecture exploits
+hardware optimizations like 3-D loop unrolling, memory tiling to maximize use of
+computational resources and provides 2.34ˆ latency improvement with respect to
+the baseline architecture.
+Further, a Genetic Algorithm (GA) based automated channel pruning technique
+was used to jointly optimize hardware usage and model accuracy. Finally, hardware
+awareness was incorporated in the pruning search by hardware heuristics and an
+accurate model of the custom accelerator. Overall a 4ˆ speedup was observed for a
+4% degradation in mIOU.},
+abbr={Master Thesis}
+}
+
+@INPROCEEDINGS{8328275,
+  bibtex_show={true},
+  author={Pradhan, Anish and Basu, Soumi and Sarkar, Sreetama and Mitra, Saptarshi and Roy, Sanjay Dhar},
+  booktitle={2018 10th International Conference on Communication Systems & Networks (COMSNETS)},
+  title={Implementation of relay hopper model for reliable communication of IoT devices in LTE environment through D2D link},
+  abstract={Internet of things (IoT) is an emerging technology
+
+that can bring about a revolution in our day-to-day lives. Device-
+to-device (D2D) communication is an energy and spectral efficient
+
+solution to the growing problem of scarcity of free spectrum and
+overloading of base stations in cellular networks. The concept
+of using D2D communication in IoT networks has already been
+proposed. But the reliability of the links established by reusing
+the resource blocks allocated to licensed cellular users has not
+been investigated earlier. In this paper, our objective is to provide
+connectivity between IoT devices and the associated gateway
+using D2D communication ensuring that links established are
+reliable, and at the same time improve performance by providing
+connectivity to the maximum number of IoT devices. We propose
+a three step approach to achieve this. In the first step, the IoT
+devices satisfying the Quality of Service (QoS) constraint are
+selected and matched with appropriate reuse candidates, that is,
+the cellular user equipments (CUEs) by an optimum resource
+
+allocation scheme. Next, link reliability of these links are com-
+puted and weak links are discarded. Finally, the disconnected IoT
+
+devices are rerouted to the IoT gateway via IoT devices possessing
+strong links following a relay hopper model. Simulation results
+indicate significant improvement in the network performance
+metrics, namely, access rate and sum throughput of IoT devices.},
+  year={2018},
+  volume={},
+  number={},
+  pages={569-572},
+  doi={10.1109/COMSNETS.2018.8328275},
+  preview={comsnets1.png},
+  abbr={COMSNETS},
+  pdf={https://drive.google.com/file/d/1SFMNmo-657CvXmbcGjfKQeN_PnK8NOf_/view?usp=sharing}
+}
+
+@INPROCEEDINGS{8118009,
+  author={Sarkar, Sayan and Ghosh, Gautam and Mohanta, Amitrakshar and Ghosh, Atreye and Mitra, Saptarshi},
+  bibtex_show={true},
+  booktitle={2017 Second International Conference on Electrical, Computer and Communication Technologies (ICECCT)},
+  title={Arduino based foot pressure sensitive smart safety system for industrial robots},
+  year={2017},
+  volume={},
+  number={},
+  pages={1-6},
+  abstract={Machine learning is one important aspect of automation. The research on automation raises a fundamental question: Can machines learn to act & behave like humans? Safe & efficient robot-human interaction - known as `collaborative robotics' or `cobotics' - has the power to transform production & assembly lines. The probability of industrial mishaps involving robots (like that in SKH metals, Manesar, August 2015) has increased with time. Companies using robots have burgeoned more safety programmes but they have some drawbacks. A real-time, MEMS sensor (PZT material) based, economical approach is proposed ensuring the safety in robotic workspace by shutting the robot system off or slowing it down upon human entry. During operation if a fault is detected at the robotic arm, the cabin operator is informed through the Human Machine Interface (HMI). The Arduino trips the robot when the operator steps on the piezoelectric mat (Doormat) while entering the workspace. The conventional safety switch can be bypassed since it is manual & sometimes problematic where fast response troubleshooting action is required but our proposed design has relatively less failure rate than traditional one. The unification of Arduino UNO & Relay, based on `OR' logic protects the personnel from any unexpected robotic behaviour even when he fails to trigger the safety switch. The status of the robotic arm can be monitored distantly by IOT integration. It is programmed with a calculated threshold value of the foot pressure corresponding to 60 Kg of body mass for the circuit tripping to avoid false triggering. As this operation is part of a process plant, operators can increase the speed of other similar processes in the unit to compensate for the loss of production.},
+  doi={10.1109/ICECCT.2017.8118009},
+  preview={icecct.png},
+  abbr={ICECC},
+  pdf={https://drive.google.com/file/d/1HIlN1QEvVTc9dqvTZ0W3GlnTWA61m5GG/view?usp=sharing}
+}
+
+@INPROCEEDINGS{8075838,
+  author={Sarkar, Sreetama and Mitra, Saptarshi and Nath, Tamoghno and Roy, Sanjay Dhar},
+  booktitle={2017 International Electrical Engineering Congress (iEECON)},
+  bibtex_show={true},
+  title={Performance of different power control schemes for a hybrid LTE system with channel impairment},
+  abstract={With the rapid increase in the use of smartphones and data traffic load on the base stations increasing everyday, an alternative mode of communication is the need of the hour. Device-to-device (D2D) communication allows devices to connect to each other directly without the intervention of the base station. Besides, it provides high spectrum efficiency and a much better signal-to-interference-plus-noise ratio (SINR) performance as compared to cellular communication. However, it may generate significant interference to cellular users when the same resources are shared by both the systems. Resource scheduling and power control are two key measures to deal with the interference between cellular and D2D user equipment (UE). In this paper, we have focused mainly on power control in D2D communication. The main objective is to study the impact of channel imperfections like multipath fading and shadowing on different power control schemes. The system consisting of a D2D pair incorporated into an Orthogonal Frequency Division Multiple Access (OFDMA) cellular system is simulated for different combinations of power control schemes for cellular and D2D users. The variations in SINR performance of the system, when fading and shadowing are introduced in the channel along with pathloss, illustrates the effect of these parameters on the Long Term Evolution (LTE) power control schemes. Also the change in outage probability has been investigated by adding more D2D pairs to the system so that it resembles a D2D communication system in realtime scenario..},
+  year={2017},
+  volume={},
+  number={},
+  pages={1-4},
+  doi={10.1109/IEECON.2017.8075838},
+  preview={IEECON.png},
+  abbr={IEECON},
+  pdf={https://drive.google.com/file/d/0B0_3fFtRovy8eUpPQVk2TW5FTEk/view?usp=sharing&resourcekey=0-_J1YAAGzJvwbxWmcFd6vmw}
+}
+
+@book{einstein1956investigations,
+  bibtex_show={true},
+  title={Investigations on the Theory of the Brownian Movement},
+  author={Einstein, Albert},
+  year={1956},
+  publisher={Courier Corporation,},
+  preview={brownian-motion.gif},
+}
+
+@article{einstein1950meaning,
+  abbr={AJP},
+  bibtex_show={true},
+  title={The meaning of relativity},
+  author={Einstein, Albert and Taub, AH},
+  journal={American Journal of Physics,},
+  volume={18},
+  number={6},
+  pages={403--404},
+  year={1950},
+  publisher={American Association of Physics Teachers,}
+}
+
+@article{PhysRev.47.777,
+  abbr={PhysRev},
+  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
+  author={Einstein, A. and Podolsky, B. and Rosen, N.},
+  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
+  journal={Phys. Rev.,},
+  volume={47},
+  issue={10},
+  pages={777--780},
+  numpages={0},
+  year={1935},
+  month={May},
+  publisher=aps,
+  doi={10.1103/PhysRev.47.777},
+  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
+  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
+  pdf={example_pdf.pdf},
+  
+}
+
+@article{einstein1905molekularkinetischen,
+  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
+  author={Einstein, A.},
+  journal={Annalen der physik,},
+  volume={322},
+  number={8},
+  pages={549--560},
+  year={1905},
+  publisher={Wiley Online Library}
+}
+
+@article{einstein1905movement,
+  abbr={Ann. Phys.},
+  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
+  author={Einstein, A.},
+  journal={Ann. Phys.,},
+  volume={17},
+  pages={549--560},
+  year={1905}
+}
+
+@article{einstein1905electrodynamics,
+  title={On the electrodynamics of moving bodies},
+  author={Einstein, A.},
+  year={1905}
+}
